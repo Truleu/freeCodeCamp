@@ -1,0 +1,25 @@
+html {
+    font-size: 20px;
+    background-color: rgb(160, 181, 201);
+}
+    
+body {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 1.1rem;
+        text-align: center;
+        color: #335;
+        margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+@media {
+    h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+}
+

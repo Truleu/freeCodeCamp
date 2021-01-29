@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey</h1>
+      <p id="description">Please take this survey, it's for my TCC.</p>
+    </header>
+    <form id="survey-form" action="">
+      <div class="">
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your full name"
+        />
+      </div>
+      <div class="">
+        <label for="email" id="email-label">E-mail </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter a valid e-mail"
+        />
+      </div>
+      <div>
+        <label for="number" id="number-label">Number</label>
+        <input
+          type="number"
+          id="number"
+          min="0"
+          max="120"
+          placeholder="Enter a number between 0 and 120"
+        />
+      </div>
+      <div class="">
+        <label for="dropdown">Select some option</label>
+        <select name="dropdown" id="dropdown">
+          <option value="first">First</option>
+          <option value="second">Second</option>
+          <option value="third">Third</option>
+          <option value="fourth">Fourth</option>
+        </select>
+      </div>
+      <div class="">
+        <h4>Select one</h4>
+        <input type="radio" name="first" id="radio" value="first" />
+        <label for="radio">First</label>
+        <input type="radio" name="second" id="radio" value="second" />
+        <label for="radio">Second</label>
+        <input type="radio" name="third" id="radio" value="third" />
+        <label for="radio">Third</label>
+      </div>
+      <div class="">
+        <h4>Select what applies</h4>
+        <input type="checkbox" name="first" id="checkbox" />
+        <label for="checkbox">First</label>
+        <input type="checkbox" name="second" id="checkbox" />
+        <label for="checkbox">Second</label>
+        <input type="checkbox" name="third" id="checkbox" />
+        <label for="checkbox">Third</label>
+        <input type="checkbox" name="fourth" id="checkbox" />
+        <label for="checkbox">Fourth</label>
+        <div class="">
+          <label for="text">Feel free to suggest</label>
+          <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -12,64 +12,67 @@
       <p id="description">Please take this survey, it's for my TCC.</p>
     </header>
     <form id="survey-form" action="">
-      <div class="">
+      <div class="form-group">
         <label for="name" id="name-label">Name</label>
         <input
           type="text"
           name="name"
           id="name"
+          class="form.control"
           placeholder="Enter your full name"
         />
       </div>
-      <div class="">
+      <div class="form-group">
         <label for="email" id="email-label">E-mail </label>
         <input
           type="email"
           name="email"
           id="email"
+          class="form.control"
           placeholder="Enter a valid e-mail"
         />
       </div>
-      <div>
+      <div class="form-group">
         <label for="number" id="number-label">Number</label>
         <input
           type="number"
           id="number"
           min="0"
           max="120"
+          class="form.control"
           placeholder="Enter a number between 0 and 120"
         />
       </div>
-      <div class="">
+      <div class="form-group>
         <label for="dropdown">Select some option</label>
-        <select name="dropdown" id="dropdown">
+        <select name="dropdown" id="dropdown" class="form.control">
           <option value="first">First</option>
           <option value="second">Second</option>
           <option value="third">Third</option>
           <option value="fourth">Fourth</option>
         </select>
       </div>
-      <div class="">
+      <div class="form-group">
         <h4>Select one</h4>
-        <input type="radio" name="first" id="radio" value="first" />
-        <label for="radio">First</label>
-        <input type="radio" name="second" id="radio" value="second" />
-        <label for="radio">Second</label>
-        <input type="radio" name="third" id="radio" value="third" />
-        <label for="radio">Third</label>
+        <label>
+        <input type="radio" name="first" id="radio" value="first" />First </label>
+        <label>
+        <input type="radio" name="second" id="radio" value="second" />Second </label>
+        <label>
+        <input type="radio" name="third" id="radio" value="third" />Third</label>
       </div>
-      <div class="">
-        <h4>Select what applies</h4>
-        <input type="checkbox" name="first" id="checkbox" />
-        <label for="checkbox">First</label>
-        <input type="checkbox" name="second" id="checkbox" />
-        <label for="checkbox">Second</label>
-        <input type="checkbox" name="third" id="checkbox" />
-        <label for="checkbox">Third</label>
-        <input type="checkbox" name="fourth" id="checkbox" />
-        <label for="checkbox">Fourth</label>
-        <div class="">
-          <label for="text">Feel free to suggest</label>
+      <div class="form-group">
+        <h4>Select multiple</h4>
+        <label>
+        <input type="checkbox" name="first" id="checkbox" />First</label>
+        <label>
+        <input type="checkbox" name="second" id="checkbox" />Second</label>
+        <label>
+        <input type="checkbox" name="third" id="checkbox" />Third</label>
+        <label>
+        <input type="checkbox" name="fourth" id="checkbox" />Fourth</label>
+        <div class="form-group">
+          <label for="text" class="form.control">Feel free to suggest</label>
           <textarea name="text" id="text" cols="30" rows="10"></textarea>
         </div>
       </div>

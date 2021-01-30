@@ -8,8 +8,8 @@ body {
   font-size: 1.1rem;
   font-weight: 750;
   text-align: center;
+  margin: auto;
   color: #335;
-  margin: 10px 300px;
   transform: scale(1.1);
   transform-origin: 0 0;
   height: 100%;

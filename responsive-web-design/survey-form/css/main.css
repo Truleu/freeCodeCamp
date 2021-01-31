@@ -1,6 +1,8 @@
 html {
   font-size: 1.15rem;
   background-color: rgb(160, 181, 201);
+  max-width: 900px;
+  margin: auto;
 }
 
 body {
@@ -10,10 +12,12 @@ body {
   text-align: center;
   margin: auto;
   color: #335;
-  transform: scale(1.1);
-  transform-origin: 0 0;
   height: 100%;
-  width: 60%;
+}
+
+header {
+  box-sizing: border-box;
+  height: 100%;
 }
 
 h1 {
@@ -31,6 +35,7 @@ label {
   align-items: center;
   font-size: 1.12rem;
   margin-bottom: 0.5rem;
+  box-sizing: border-box;
 }
 
 @media {
@@ -47,25 +52,30 @@ p {
 #title {
   background-color: rgb(127, 175, 130);
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #description {
   background-color: rgb(194, 158, 197);
+  border-radius: 10px;
 }
 
 #survey-form {
   background-color: cornflowerblue;
   display: center;
+  border-radius: 10px;
 }
 
 .form-group {
   display: grid;
   margin: 0 auto 1.25rem auto;
   padding: 0.25rem;
+  height: 100%;
+  box-sizing: border-box;
 }
+
 .form-control {
-  display: block;
+  display: grid;
   width: 100%;
   height: 2.3rem;
   padding: 0.3rem 0.75rem;
@@ -98,6 +108,6 @@ textarea {
   color: rgb(218, 218, 209);
   width: 100%;
   padding: 1.4rem;
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
 }
